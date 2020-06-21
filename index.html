@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <!-- No loop. -->
+            <video id="cin" src="jojoRabbit.mp4" autoplay="false">
+          </a-assets>
+        
+        <a-sky  src="img/sky.jpg"></a-sky>
+
+        <a-plane color="#ffff8a" width="20" height="15" shadow position="0 3.25 0"></a-plane>
+        <a-plane color="#ff7070" width="20" height="15" rotation="0 90 0" position="-10 3.25 10" shadow></a-plane> 
+        <a-plane color="#ff7070" width="20" height="15" rotation="0 180 0" position="0 3.25 20" shadow></a-plane>
+        <a-plane color="#ffff8a" width="20" height="15" rotation="0 270 0" position="10 3.25 10" shadow></a-plane> 
+
+        <a-box width="20" height="20" rotation="90 0 0" position="0 11.3 10" src="img/glass.jpg" opacity="0.4"></a-box>
+
+
+         <!-- Humor as a survival strategy -->
+         <a-box position="-3.5 2.55 0" rotation="0 0 0"  width="3.3345" height="5" depth="0.3" src="img/theLastLaugh.jpg" shadow></a-box>
+         <a-box shadow position="-7 0.8 0" rotation="0 0 0" color="white" width="2.5" height="1.5" depth="0.05" ></a-box>
+         <a-text scale="0.75 0.75 0.75" shadow position="-8 1.3 0.1" rotation="0 0 0" color="black" value="The Last Laugh" ></a-text>
+         <a-text scale="0.4 0.4 0.4" shadow position="-8 0.9 0.1" rotation="0 0 0" color="black" value="In the documentary 'The Last Laugh', a multitude of directors, comedians, concentration camps surviors, and filmmakers discuss the ramifications of using humor to satirise the holocaust."></a-text>
+          
+         <a-box shadow position="-7 3 0" rotation="0 0 0" color="white" width="1" height="1" depth="0.05" ></a-box>
+         <a-text scale="2.5 2.5 2.5" shadow position="-7.15 3 0.1" rotation="0 0 0" color="black" value="2" ></a-text>
+
+        <!-- The Last Laugh -->
+        <a-box position="3.5 2.55 0" rotation="0 0 0" color="#4CC3D9" width="3.3345" height="5" depth="0.3" src="img/humor.jpg" shadow></a-box>
+        <a-box shadow position="7 0.8 0" rotation="0 0 0" color="white" width="2.5" height="1.5" depth="0.05" ></a-box>
+        <a-text scale="0.75 0.75 0.75" shadow position="5.94 1.3 0.1" rotation="0 0 0" color="black" value="Humor as a survival strategy" ></a-text>
+        <a-text scale="0.4 0.4 0.4" shadow position="5.95 1.15 0.1" rotation="0 0 0" color="grey" value="Lázaro Dronez" ></a-text>
+        <a-text scale="0.4 0.4 0.4" shadow position="5.95 0.6 0.1" rotation="0 0 0" color="black" value="'The secret weapon of the Jews is their humor', or so Lázaro Dronez believes. His book makes a case that one of the distinguishing traits that has kept the Jews going throughout history is their humor. To lose that is to become like the Nazi's 'humorless'. Jewish humor is a mechanism to preserve dignity, as well as a way to be optimistic. 'Humor could transform pessimism into optimism. Resignation into hope. Present into the future.'"></a-text>
+        
+
+        <a-box shadow position="7 3 0" rotation="0 0 0" color="white" width="1" height="1" depth="0.05" ></a-box>
+         <a-text scale="2.5 2.5 2.5" shadow position="6.75 3 0.1" rotation="0 0 0" color="black" value="3" ></a-text>
+        <!-- VIDEOS -->
+        <a-box shadow position="9.9 4 16.3" rotation="0 270 0" color="white" width="1" height="1" depth="0.05" ></a-box>
+        <a-text scale="2.5 2.5 2.5" shadow position="9.8 4 16" rotation="0 270 0" color="black" value="4" ></a-text>
+        
+        <a-entity geometry="primitive: box; height: 7.2; width:12.8; depth: 0.3" material="src: #cin" position="9.9 5 8.5" rotation="0 270 0"></a-entity>
+
+
+        <a-box id="noneB" cursor-v shadow position="10 0 4" rotation="0 90 0" color="white" width="2.5" height="1.5" depth="0.05" ></a-box>
+        <a-text id="noneT" cursor-v scale="1 1 1"  position="9.9 0 3.85" rotation="0 270 0" color="black" value="Stop"></a-text>
+
+
+        <a-box id="jojoB" cursor-v shadow position="10 0 7" rotation="0 90 0" color="white" width="2.5" height="1.5" depth="0.05" ></a-box>
+        <a-text id="jojoT" cursor-v scale="1 1 1"  position="9.9 0 6.5" rotation="0 270 0" color="black" value="Jojo Rabbit"></a-text>
+        
+        <a-box id="ingB" cursor-v shadow position="10 0 10" rotation="0 90 0" color="white" width="2.5" height="1.5" depth="0.05" ></a-box>
+        <a-text id="ingT" cursor-v scale="1 1 1"  position="9.9 0 9.1" rotation="0 270 0" color="black" value="Inglourius Basterds"></a-text>
+
+        <a-box id="lifB" cursor-v shadow position="10 0 13" rotation="0 90 0" color="white" width="2.5" height="1.5" depth="0.05" ></a-box>
+        <a-text id="lifT" cursor-v scale="1 1 1"  position="9.9 0 12.2" rotation="0 270 0" color="black" value="Life is Beautiful"></a-text>
+
+
+          <!-- DENIAL -->
+
+          <a-box position="1 4.55 20" rotation="0 180 0"  width="12" height="7.5" depth="0.3" src="img/denial.png" shadow></a-box>
+          <a-box shadow position="-7 0.8 20" rotation="0 180 0" color="white" width="2.5" height="1.5" depth="0.05" ></a-box>
+          <a-text scale="0.75 0.75 0.75" shadow position="-5.8 1.3 19.9" rotation="0 180 0" color="black" value="A Response" ></a-text>
+          <a-text scale="0.4 0.4 0.4" shadow position="-5.8 0.9 19.9" rotation="0 180 0" color="black" value="As a response to Jojo rabbit, Patrick Hosmer made this drawing. Which reflects his belief that the camoflaguing of a very serious topic is not preferable. And is just thinly guided vale, which will allow facist ideas more acceptable."></a-text>
+           
+          <!-- <a-box shadow position="-7 3 20" rotation="0 180 0" color="white" width="1" height="1" depth="0.05" ></a-box> -->
+          <!-- <a-text scale="2.5 2.5 2.5" shadow position="-6.75 3 19.9" rotation="0 180 0" color="black" value="5" ></a-text> -->
+
+        <!-- AUDIOTOUR FUNCTION -->
+        <a-text id="code" scale="2 2 2" shadow position="-2 -2 5" rotation="270 0 0" color="grey" value="Enter Audiotour Number: " ></a-text>
+        <a-text id="playing" scale="2 2 2" shadow position="-0.5 -2 5.5" rotation="270 0 0" color="#ffff8a" value="Playing: " ></a-text>
+        <a-text scale="1.1 1.1 1.1" shadow position="-1.4 -2 5.9" rotation="270 0 0" color="red" value="Type 1 and press enter to start" ></a-text>
+
+
+        <a-text scale="6 6 6" shadow position="-10 5 19" rotation="0 90 0" color="white" value="HUMOR IN THE HOLOCAUST" ></a-text>
+        
+
+        <!-- <a-box  position="0 6 0" rotation="0 0 0" color="#4CC3D9" width="10" depth="0.2"></a-box> -->
+
+        
+<!-- 
+        <a-box position="-3 0.5 3" rotation="0 0 0" color="yellow" width="1" height="1" scale="2 2 2"></a-box>
+        <a-text color="black" value="Press WASD to move"  position="-2 0.5 3.85" rotation="0 90 0" scale="0.8 0.8 0.8"></a-text> -->
+
+
+        <!-- <a-text color="black" value="Welcome, to see the exhibition, walk forwards"  position="-0.5 1 -1.5"></a-text> -->
+
+        <a-plane position="-1 -2 -2" rotation="-90 0 0" width="100" height="50" color="#FFFFFF"></a-plane>
+
+        
+        <a-entity id="sound" geometry="primitive: plane" material="color: blue"
+          position="0 0 9" scale="0 0 0"></a-entity>
+
+        <a-entity geometry="primitive: plane" material="color: blue"
+          position="0 0 9" scale="0 0 0"></a-entity>
+
+
+        <a-entity camera look-controls wasd-controls="acceleration: 300" position="0 0 9">
+            <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1"
+                geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015" material="color: red; shader: flat">
+            </a-entity>
+    
+        </a-entity>
+    </a-scene>
+
+    
+
+    
+</body>
+
+</html>
